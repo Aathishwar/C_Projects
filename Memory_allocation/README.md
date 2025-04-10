@@ -35,9 +35,9 @@ This project implements a custom dynamic memory allocator in C using a fixed-siz
   } Block;
 Each block includes:
 
-size: Usable size
-free: 1 if available, 0 if used
-next: Pointer to the next block
+- size: Usable size
+- free: 1 if available, 0 if used
+- next: Pointer to the next block
 
 🔧 Core Functions
 
@@ -52,26 +52,24 @@ next: Pointer to the next block
 
 🛠️ How to Compile & Run
 
-gcc sample.c -o memalloc
-./memalloc
+- gcc sample.c -o memalloc
+- ./memalloc
 
 
 📌 Sample Output
 
-Allocating 100 bytes...
-[SPLIT] Block at 0x... split:
---> Allocated block: size = 100
---> New free block at 0x...: size = ...
-Block 1 | Addr: 0x... | Size: 100 | USED
-Block 2 | Addr: 0x... | Size: ... | FREE
-...
-You’ll see:
+- Allocating 100 bytes...
+- [SPLIT] Block at 0x... split:
+- --> Allocated block: size = 100
+- --> New free block at 0x...: size = ...
+- Block 1 | Addr: 0x... | Size: 100 | USED
+- Block 2 | Addr: 0x... | Size: ... | FREE
+- ...
+- You’ll see:
 
-Live updates of memory status
-
-Block allocations and deallocations
-
-Splitting and merging in action
+- Live updates of memory status
+- Block allocations and deallocations
+- Splitting and merging in action
 
 🧪 Demo Flow
 
