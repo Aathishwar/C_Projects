@@ -40,7 +40,14 @@ int main() {
     printf("The array values:\n");
     for(int i=0;i<5;i++) printf("%d ",arr[i]);
     printf("\n");
-    free(arr1);
+    
+    
+    arr1 = my_realloc(arr1,sizeof(int)*10);
+    printf("Enter values :\n");
+    for(int i=0;i<10;i++) scanf("%d",&arr[i]);
+    printf("The values are:\n");
+    for(int i=0;i<10;i++) printf("%d ",arr[i]);
+    my_free(arr1);
 
     return 0;
 }
