@@ -57,14 +57,15 @@ Each block includes:
 
 
 📌 Sample Output
-
-- Allocating 100 bytes...
+```bash
+Allocating 100 bytes...
 - [SPLIT] Block at 0x... split:
 - --> Allocated block: size = 100
 - --> New free block at 0x...: size = ...
 - Block 1 | Addr: 0x... | Size: 100 | USED
 - Block 2 | Addr: 0x... | Size: ... | FREE
 - ...
+```
 - You’ll see:
 
 - Live updates of memory status
