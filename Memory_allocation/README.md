@@ -13,6 +13,15 @@ This project implements a custom dynamic memory allocator in C using a fixed-siz
 
 ## 🚀 How It Works
 
+🧱 1. Memory Pool init_memory_pool()
+🧩 2. Memory Block Structure  Block()
+✂️ 3. Block Splitting split_block()
+🧵 4. Allocation my_malloc()
+🧽 5. Zero-Init Allocation my_calloc()
+🗑️ 6. Freeing Memory my_free()
+🧬 7. Merging Blocks merge_blocks()
+🔍 8. Debugging with memory_status()
+
 ### 📦 Memory Model
 
 - Allocator manages a 1 MB static memory pool (`char memory_pool[1048576]`)
