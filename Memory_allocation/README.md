@@ -41,13 +41,13 @@ next: Pointer to the next block
 
 🔧 Core Functions
 
-Function	Description
-my_malloc()	Allocates a block of memory
-my_calloc()	Allocates and zeroes memory
-my_free()	Frees a block and merges if possible
-memory_status()	Prints current block state
-split_block()	Splits large free blocks
-merge_blocks()	Merges adjacent free blocks
+- Function	Description
+- my_malloc()	Allocates a block of memory
+- my_calloc()	Allocates and zeroes memory
+- my_free()	Frees a block and merges if possible
+- memory_status()	Prints current block state
+- split_block()	Splits large free blocks
+- merge_blocks()	Merges adjacent free blocks
 
 
 🛠️ How to Compile & Run
@@ -75,7 +75,7 @@ Splitting and merging in action
 
 🧪 Demo Flow
 
-Allocates multiple blocks
-Frees some and reallocates
-Tests zero-initialized memory using my_calloc
-Displays memory state after each operation
+- Allocates multiple blocks
+- Frees some and reallocates
+- Tests zero-initialized memory using my_calloc
+- Displays memory state after each operation
