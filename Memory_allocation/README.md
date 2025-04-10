@@ -64,6 +64,7 @@ Block allocations and deallocations
 Splitting and merging in action
 
 🧪 Demo Flow
+
 Allocates multiple blocks
 Frees some and reallocates
 Tests zero-initialized memory using my_calloc
