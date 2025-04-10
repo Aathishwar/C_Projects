@@ -66,11 +66,11 @@ Allocating 100 bytes...
 - Block 2 | Addr: 0x... | Size: ... | FREE
 - ...
 ```
-- You’ll see:
+You’ll see:
 
-- Live updates of memory status
-- Block allocations and deallocations
-- Splitting and merging in action
+-  Live updates of memory status
+-  Block allocations and deallocations
+-  Splitting and merging in action
 
 🧪 Demo Flow
 
