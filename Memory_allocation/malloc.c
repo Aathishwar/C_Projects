@@ -72,11 +72,31 @@ void my_free(void *ptr) {
     block->free = 1;
     merge_blocks();
 }
+
 void *my_calloc(int size,int type){
     void * new=my_malloc(size*type);
     if(new)
       memset(new,0,size*type);
     return new;
+}
+
+void *my_realloc(void *ptr, size_t new_size) {
+    if (!ptr) 
+        return my_malloc(new_size);
+
+    Block *old_block = (Block *)ptr - 1;
+
+    if (old_block->size >= new_size) 
+        return ptr;
+
+    void *new_ptr = my_malloc(new_size); // new block allocation
+    if (!new_ptr) return NULL;
+
+    memcpy(new_ptr, ptr, old_block->size); // copy old block
+
+    my_free(ptr);
+
+    return new_ptr;
 }
 
 void memory_status() {
