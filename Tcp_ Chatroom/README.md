@@ -54,10 +54,10 @@ gcc client.c -o client
 ```bash
 ./client
 ```
-  Enter your username when prompted and start chatting!
----
+Enter your username when prompted and start chatting!
 
-##🔐 About the Encryption
+---
+## 🔐 About the Encryption
 This project uses a simple XOR cipher with a shared key (0x5A) to encrypt and decrypt all messages transmitted between clients and server.
 This is not secure encryption, but it demonstrates:
 - How to obfuscate messages in transit
