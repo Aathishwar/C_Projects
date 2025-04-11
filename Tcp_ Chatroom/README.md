@@ -91,3 +91,6 @@ Each user is assigned a unique color from a predefined set using ANSI escape cod
 - 🖼️ GUI interface using ncurses or GTK
 - 🔗 File sharing (via TCP stream)
 ---
+## 👨‍💻 Author
+### Aathishwar V
+- Created with ❤️ for learning network programming.
