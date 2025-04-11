@@ -33,24 +33,24 @@ A Linux-based terminal chat application written in C using TCP sockets. It suppo
 sudo apt update
 sudo apt install build-essential git
 ```
-###📥 Clone the Repository
+📥 Clone the Repository
 ```bash
 git clone https://github.com/your-username/tcp-chat-room.git
 cd Tcp_Charroom
 ```
-###🧪 Compile the Code (in seperate terminals)
+🧪 Compile the Code (in seperate terminals)
 ```bash
 gcc server.c -o server
 gcc client.c -o client
 ```
-###🖥️ Usage
-####1️⃣ Start the Server
+🖥️ Usage
+- 1️⃣ Start the Server
 ```bash
 ./server
 ```
   Server will start listening on port 8080.
 
-####2️⃣ Start One or More Clients (in new terminals)
+2️⃣ Start One or More Clients (in new terminals)
 ```bash
 ./client
 ```
