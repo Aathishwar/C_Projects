@@ -33,17 +33,17 @@ A Linux-based terminal chat application written in C using TCP sockets. It suppo
 sudo apt update
 sudo apt install build-essential git
 ```
-📥 Clone the Repository
+### 📥 Clone the Repository
 ```bash
 git clone https://github.com/your-username/tcp-chat-room.git
 cd Tcp_Charroom
 ```
-🧪 Compile the Code (in seperate terminals)
+### 🧪 Compile the Code (in seperate terminals)
 ```bash
 gcc server.c -o server
 gcc client.c -o client
 ```
-🖥️ Usage
+### 🖥️ Usage
 - 1️⃣ Start the Server
 ```bash
 ./server
@@ -62,4 +62,32 @@ This project uses a simple XOR cipher with a shared key (0x5A) to encrypt and de
 This is not secure encryption, but it demonstrates:
 - How to obfuscate messages in transit
 - Shared-key symmetric encryption flow
+---
+
+## 🎨 Terminal Colors
+Each user is assigned a unique color from a predefined set using ANSI escape codes.
+
+- Color	Meaning
+- 🔴 Red	    User 1
+- 🟢 Green	  User 2
+- 🔵 Blue   	User 3
+- 🟡 Yellow	  User 4
+- 🟣 Magenta	User 5
+- 🟦 Cyan	    User 6
+- Colors wrap around once all are used.
+
+---
+## 📸 Preview
+```rust
+[🟢 Alice] Hey there!
+[🔵 Bob] Hi Alice!
+[🟡 Carol] What's up everyone?
+```
+---
+## 🧩 Future Enhancements
+- 🔒 Upgrade to AES encryption using OpenSSL
+- 📬 Private messaging (/msg command)
+- 📝 Chat history logging
+- 🖼️ GUI interface using ncurses or GTK
+- 🔗 File sharing (via TCP stream)
 ---
